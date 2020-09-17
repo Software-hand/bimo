@@ -1,0 +1,18 @@
+
+  <!-- <input placeholder="输入名字" bindinput="addName"></input>
+<input placeholder="输入年龄" bindinput="addAge"></input>
+
+<button bindtap="addData">添加数据</button>
+<button bindtap="getData">查询数据</button>
+
+
+<input placeholder="输入删除ID" bindinput="getId"></input>
+<button bindtap="delData" >删除数据</button>
+
+<input placeholder="输入修改ID" bindinput="getId"></input>
+
+<button bindtap="updateName" >修改名字</button>
+<button bindtap="updateAge" >修改年龄</button> -->
+<view>
+  页面功能暂未开放
+</view>

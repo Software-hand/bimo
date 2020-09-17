@@ -1,0 +1,51 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "pages":[
+    "pages/my/my",
+    "pages/add/add",
+    "pages/add/notepad/notepad",
+    "pages/add/list/list",
+     
+    "pages/file/file",
+
+    
+    "pages/my/day/day",
+    "pages/my/logs/logs",
+    "pages/my/counter/counter"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "list": [
+   
+    {
+      "pagePath":  "pages/add/add",
+      "text": "",
+      "iconPath": "./icon-img/add.png",
+      "selectedIconPath": "./icon-img/add-bold.png"
+    },
+    {
+      "pagePath": "pages/file/file",
+      "text": "",
+      "iconPath": "./icon-img/folder-close.png",
+      "selectedIconPath": "./icon-img/file-open.png"
+    },
+    {
+      "pagePath":  "pages/my/my",
+      "text": "",
+      "iconPath": "./icon-img/setting.png",
+      "selectedIconPath": "./icon-img/setting-filling.png"
+    }
+    
+    
+  ]
+}
+}

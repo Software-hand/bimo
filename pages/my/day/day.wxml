@@ -1,0 +1,6 @@
+<van-calendar
+  title="日历"
+  poppable="{{ false }}"
+  show-confirm="{{ false }}"
+  class="calendar"
+/>

@@ -1,0 +1,27 @@
+<view wx:if="{{!openid}}">
+<button class="into" open-type="getUserInfo" lang="zh_CN"
+bindgetuserinfo="onGoUserInfo">登录</button>
+</view>
+
+<view  class="uploader-container" wx:if="{{openid}}"> 
+  <image class="image" src="{{userinfo.avatarUrl}}"></image>
+  <view class="name">{{userinfo.nickName}}</view>
+</view>
+
+<!-- 已实现 -->
+<van-cell title="日历" is-link url='/pages/my/day/day' link-type="navigateTo"/>
+
+<van-cell title="计算器" is-link url='/pages/my/counter/counter' link-type="navigateTo"/>
+
+<!-- 未实现 -->
+<!-- <van-cell title="日志" is-link url='/pages/my/logs/logs' link-type="navigateTo"/> -->
+<!-- <van-cell title="回收站" is-link />
+<van-cell title="自定义" is-link />
+<van-cell title="设置" is-link />
+<van-cell title="夜间模式" is-link />
+<van-cell title="客服" is-link />
+<van-cell title="反馈" is-link />
+<van-cell title="关于" is-link /> -->
+
+
+

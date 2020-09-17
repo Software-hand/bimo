@@ -1,0 +1,23 @@
+<view class="page-body">
+  <view class="page-section">
+  
+    <view class="textarea-wrp">
+      <textarea bindblur="addtitle" auto-height="true"  placeholder="标题"
+      bindinput="add1"
+      />
+    </view>
+  </view>
+
+  <view class="page-section">
+    <!-- 自动聚焦就是点进来，手机键盘直接打开 -->
+    <!-- 通过 auto-focus 设置是否聚焦 -->
+    <view class="textarea-wrp " >
+      <textarea auto-focus="true"  placeholder="内容" 
+      maxlength="-1"
+      auto-height="true"
+      bindblur='addcontent'
+      bindinput="add2"
+      />
+    </view>
+  </view>
+</view>

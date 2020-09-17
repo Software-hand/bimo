@@ -1,0 +1,20 @@
+/* pages/my/my.wxss */
+.image{
+  width:100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 20px;
+}
+
+.name{
+  text-align: center;
+  padding-top: 10px;
+}
+
+button{
+  background: #ea5149;
+  width: 60%;
+  margin-top: 100px;
+  color: #ffffff;
+}
