@@ -6,7 +6,7 @@ Page({
     startY: 0
   },
 
-  getlogs: function (e) {
+  getlogs: function () {
     // 获取缓存信息
     const ui = wx.getStorageSync("userinfo")
     console.log("/file.js/12/ui:",ui)
@@ -52,7 +52,7 @@ Page({
   //手指触摸动作开始 记录起点X坐标
   touchstart: function (e) {
     //开始触摸时 重置所有删除
-    this.data.notepad.forEach(function (v, i) {
+    this.data.notepad.forEach(function (v) {
       if (v.isTouchMove)//只操作为true的
         v.isTouchMove = false;
     })
@@ -112,7 +112,6 @@ Page({
     this.setData({
       notepad: this.data.notepad
     })    
-    const that = this
     // 删除云数据库记录
     wx.cloud.callFunction({
       name:'delnotepad',
@@ -125,7 +124,7 @@ Page({
         console.log("delnotepad:云函数调用成功",res)
         console.log("notepad的_id:",e.currentTarget.dataset._id)
       },
-      fail:res=>{
+      fail:()=>{
         console.log("login:云函数调用失败")
       }
     })

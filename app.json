@@ -3,17 +3,19 @@
     "van-icon": "@vant/weapp/icon/index"
   },
   "pages":[
-    "pages/my/my",
+    "pages/home/home",
+    "pages/menu/menu",
+    "pages/menu/day/day",
+    "pages/menu/counter/counter",
     "pages/add/add",
     "pages/add/notepad/notepad",
     "pages/add/list/list",
-     
     "pages/file/file",
-
+    "pages/my/my",
+    "pages/my/explain/explain",
+    "pages/my/about/about",
+    "pages/my/logs/logs"
     
-    "pages/my/day/day",
-    "pages/my/logs/logs",
-    "pages/my/counter/counter"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -25,7 +27,18 @@
 
   "tabBar": {
     "list": [
-   
+      {
+        "pagePath":  "pages/home/home",
+        "text": "",
+        "iconPath": "./icon-img/home.png",
+        "selectedIconPath": "./icon-img/home-filling.png"
+      },
+      {
+        "pagePath":  "pages/menu/menu",
+        "text": "",
+        "iconPath": "./icon-img/work.png",
+        "selectedIconPath": "./icon-img/work-filling.png"
+      },
     {
       "pagePath":  "pages/add/add",
       "text": "",

@@ -9,9 +9,10 @@ bindgetuserinfo="onGoUserInfo">登录</button>
 </view>
 
 <!-- 已实现 -->
-<van-cell title="日历" is-link url='/pages/my/day/day' link-type="navigateTo"/>
 
-<van-cell title="计算器" is-link url='/pages/my/counter/counter' link-type="navigateTo"/>
+
+<van-cell title="说明" is-link url="/pages/my/explain/explain" link-type="navigateTo"/>
+<van-cell title="关于" is-link url="/pages/my/about/about" link-type="navigateTo"/>
 
 <!-- 未实现 -->
 <!-- <van-cell title="日志" is-link url='/pages/my/logs/logs' link-type="navigateTo"/> -->

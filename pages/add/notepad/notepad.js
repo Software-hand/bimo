@@ -75,10 +75,10 @@ Page({
               content:this.data.content,
               openid:this.data.openid
             },
-          }),
-          wx.switchTab({
-            url:"../../pages/file/file"
           })
+          // wx.switchTab({
+          //   url:"../../pages/file/file"
+          // })
         },
         // 云函数失败发出请求
         fail:res=>{
