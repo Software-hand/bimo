@@ -2,55 +2,52 @@
   "usingComponents": {
     "van-icon": "@vant/weapp/icon/index"
   },
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/menu/menu",
     "pages/add/add",
     "pages/file/file",
     "pages/my/my"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-
   "tabBar": {
     "list": [
       {
-        "pagePath":  "pages/home/home",
+        "pagePath": "pages/home/home",
         "text": "",
         "iconPath": "./icon-img/home.png",
         "selectedIconPath": "./icon-img/home-filling.png"
       },
       {
-        "pagePath":  "pages/menu/menu",
+        "pagePath": "pages/menu/menu",
         "text": "",
         "iconPath": "./icon-img/work.png",
         "selectedIconPath": "./icon-img/work-filling.png"
       },
-    {
-      "pagePath":  "pages/add/add",
-      "text": "",
-      "iconPath": "./icon-img/add.png",
-      "selectedIconPath": "./icon-img/add-bold.png"
-    },
-    {
-      "pagePath": "pages/file/file",
-      "text": "",
-      "iconPath": "./icon-img/folder-close.png",
-      "selectedIconPath": "./icon-img/file-open.png"
-    },
-    {
-      "pagePath":  "pages/my/my",
-      "text": "",
-      "iconPath": "./icon-img/setting.png",
-      "selectedIconPath": "./icon-img/setting-filling.png"
-    }
-    
-    
-  ]
-}
+      {
+        "pagePath": "pages/add/add",
+        "text": "",
+        "iconPath": "./icon-img/add.png",
+        "selectedIconPath": "./icon-img/add-bold.png"
+      },
+      {
+        "pagePath": "pages/file/file",
+        "text": "",
+        "iconPath": "./icon-img/folder-close.png",
+        "selectedIconPath": "./icon-img/file-open.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "",
+        "iconPath": "./icon-img/setting.png",
+        "selectedIconPath": "./icon-img/setting-filling.png"
+      }
+    ]
+  }
 }

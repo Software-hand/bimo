@@ -1,14 +1,7 @@
-
-
-<!--  wx:if="openid" -->
-
-<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" 
-wx:for="{{notepad}}" wx:key="_id">
-  <!-- <view class="content">{{item.content}}</view> -->
-<view class="content">{{item.title}}</view>
-<view class="content">{{item.content}}</view>
-<view class="del" catchtap="del"  data-_id="{{item._id}}" data-title="{{item.title}}" data-index="{{index}}">删除</view>
-
-</view>
-
+<van-grid clickable column-num="1" >
+  <van-grid-item icon="home-o"  text="记事本" 
+  link-type="navigateTo"
+    url="/pages/file/notepad/notepad-file"/>
+</van-grid>
   
+ 
