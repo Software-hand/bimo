@@ -5,17 +5,9 @@
   "pages":[
     "pages/home/home",
     "pages/menu/menu",
-    "pages/menu/day/day",
-    "pages/menu/counter/counter",
     "pages/add/add",
-    "pages/add/notepad/notepad",
-    "pages/add/list/list",
     "pages/file/file",
-    "pages/my/my",
-    "pages/my/explain/explain",
-    "pages/my/about/about",
-    "pages/my/logs/logs"
-    
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"light",
