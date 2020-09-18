@@ -3,9 +3,10 @@
   link-type="navigateTo"
     url="/pages/add/notepad/notepad"/>
 
-  <!-- <van-grid-item icon="photo-o" text="清单"
-    link-type="navigateTo"
-    url="/pages/add/list/list"/>
+  <van-grid-item icon="photo-o" text="清单"
+  link-type="navigateTo"
+  url="/pages/add/list/list"/>
+  <!-- 
 
   <van-grid-item icon="photo-o" text="绘图" />
 

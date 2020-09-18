@@ -2,6 +2,10 @@
   <van-grid-item icon="home-o"  text="记事本" 
   link-type="navigateTo"
     url="/pages/file/notepad/notepad-file"/>
+
+  <van-grid-item icon="home-o"  text="清单" 
+link-type="navigateTo"
+  url="/pages/file/list/list-file"/>
 </van-grid>
   
  
