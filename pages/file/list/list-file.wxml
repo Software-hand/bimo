@@ -1,2 +1,14 @@
-<!--pages/file/list/list-file.wxml-->
-<text>pages/file/list/list-file.wxml</text>
+
+
+<!--  wx:if="openid" -->
+
+<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" 
+wx:for="{{list}}" wx:key="_id">
+ 
+<view class="content">{{item.listdata}}</view>
+
+<view class="del" catchtap="del"  data-_id="{{item._id}}" data-title="{{item.title}}" data-index="{{index}}">删除</view>
+
+</view>
+
+  

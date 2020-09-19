@@ -36,9 +36,7 @@ Page({
           // 返回本地事件用户信息 userInfo e:自定义 代表本地事件
           userinfo:e.detail.userInfo
         })
-        // 将openid 信息保存的 userinfo 内，这样后面保存到缓存只需保存一个字典字段
-        // data 是页面第一次渲染使用的初始数据。去掉会报错 暂时不是完全清楚概念 9.14
-        // data 就是前面定义的 data 内的 数据  9.15
+      
         that.data.userinfo.openid = that.data.openid
  
         console.log("/my.js/openid:",that.data.openid)

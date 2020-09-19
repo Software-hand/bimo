@@ -1,2 +1,17 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+
+<view>
+  <view class="title">清单</view>
+  <checkbox-group bindchange="checkboxChange"  wx:for="{{list}}" wx:key="openid" checked="{{item.checked}}" 
+    data-_id="{{item._id}}" data-checked="{{item.checked}}" data-openid="{{item.openid}}" data-listdata="{{item.listdata}}"
+  > 
+  <view>
+    <checkbox  value="{{item.listdata}}"/>
+    {{item.listdata}}
+  </view>
+</checkbox-group>
+<view class="title">记事本</view>
+  <view wx:for="{{notepad}}" wx:key="openid">
+    <view>{{item.title}}:{{item.content}}</view>
+  </view> 
+</view>    

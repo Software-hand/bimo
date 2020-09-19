@@ -2,12 +2,7 @@
 page{
   background: rgb(255, 255, 255);
 }
-.container{
-  width:100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding-bottom:10rpx;
-}
+
 .touch-item {
  font-size: 14px;
  display: flex;
@@ -49,5 +44,5 @@ page{
  transform: translateX(0);
 }
 .touch-move-active .content{
-  background: rgba(180, 218, 12, 0.3);
+  background: rgb(255, 255, 255);
 }

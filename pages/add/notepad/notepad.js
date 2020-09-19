@@ -1,6 +1,5 @@
 Page({
   data: {
-    focus: false,
     // 标题
     title:'',
     // 内容
