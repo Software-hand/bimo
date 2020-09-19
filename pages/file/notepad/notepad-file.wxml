@@ -2,7 +2,7 @@
 
 <!--  wx:if="openid" -->
 
-<view class="touch-item" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" 
+<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" 
 wx:for="{{notepad}}" wx:key="_id">
   <!-- <view class="content">{{item.content}}</view> -->
 <view class="content">{{item.title}}</view>
