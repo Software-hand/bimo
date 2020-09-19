@@ -6,6 +6,9 @@
     <van-grid-item icon="home-o"  text="计算器" 
   link-type="navigateTo"
     url="/pages/menu/counter/counter"/>
+    <van-grid-item icon="home-o"  text="番茄工作" 
+  link-type="navigateTo"
+    url="/pages/menu/time/time"/>
 
 </van-grid>
 
