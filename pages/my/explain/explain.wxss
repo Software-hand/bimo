@@ -1,1 +1,12 @@
-/* pages/my/explain/explain.wxss */
+
+
+.notepad{
+
+	margin-top:20rpx;
+	margin-left:20rpx;
+	margin-right:20rpx;
+	border-top: 2rpx solid  rgb(217, 217, 223);
+	text-indent:2em;
+	border-bottom: 2rpx solid  rgb(217, 217, 223);
+	padding: 50rpx 50rpx;
+}

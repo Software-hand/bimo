@@ -1,2 +1,16 @@
-<!--pages/my/explain/explain.wxml-->
-<text>pages/my/explain/explain.wxml</text>
+<view class="notepad">
+
+<view>
+  1、主页展示 所有内容，并不提供修改删除
+</view>
+<view>
+  2、工具箱功能还在修改
+</view>
+<view>
+  3、底部中间是 添加 按钮，添加后的数据在 文件按钮(右边第二个位置)内，在文件中右滑删除
+</view>
+<view>
+  4、登录之后才可以使用添加功能
+</view>
+
+</view>

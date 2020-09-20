@@ -43,13 +43,13 @@ Page({
             openid:res.result.openid,
           })
           console.log("login.openid:",this.data.openid)
-
+ 
           wx.cloud.callFunction({
             name:'createlist',
             data:{
               openid:this.data.openid,
               listdata:this.data.listdata,
-              checked:false
+              date:Date.now()
             },
             success:res=>{
               console.log("上传成功",res)

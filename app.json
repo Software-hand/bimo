@@ -3,18 +3,11 @@
     "van-icon": "@vant/weapp/icon/index"
   },
   "pages": [
-    
-   
     "pages/home/home",
     "pages/menu/menu",
-    
     "pages/add/add",
     "pages/file/file",
-    "pages/my/my",
-    
-    "pages/menu/time/setting/setting",
-    "pages/menu/time/logs/logs",
-    "pages/menu/time/index/index"
+    "pages/my/my"
   ],
   "window": {
     "backgroundTextStyle": "light",

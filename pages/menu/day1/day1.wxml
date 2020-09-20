@@ -1,0 +1,9 @@
+<calendar
+  
+  config="{{calendarConfig}}"
+  bind:takeoverTap="takeoverTap"
+  bind:afterTapDate="afterTapDate"
+  bind:afterCalendarRender="afterCalendarRender"
+  bind:onSwipe="onSwipe"
+  bind:whenChangeMonth="whenChangeMonth"
+/>

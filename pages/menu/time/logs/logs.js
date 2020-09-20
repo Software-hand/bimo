@@ -1,4 +1,4 @@
-var util = require('../../utils/util.js')
+var util = require('../../utils/util')
 Page({
   data: {
     logs: [],
@@ -23,11 +23,14 @@ Page({
       logs: logs
     })
   },
-  onLoad: function() {},
+  onLoad: function() {
+    console.log(this.data.logs)
+  },
   switchModal: function() {
     this.setData({
       modalHidden: !this.data.modalHidden
     })
+    
   },
   hideToast: function() {
     this.setData({

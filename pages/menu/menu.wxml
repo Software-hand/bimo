@@ -3,6 +3,9 @@
   <van-grid-item icon="home-o"  text="日历" 
   link-type="navigateTo"
     url="/pages/menu/day/day"/>
+    <van-grid-item icon="home-o"  text="日历1" 
+  link-type="navigateTo"
+    url="/pages/menu/day1/day1"/>
     <van-grid-item icon="home-o"  text="计算器" 
   link-type="navigateTo"
     url="/pages/menu/counter/counter"/>

@@ -1,17 +1,26 @@
 
 
-<view>
-  <view class="title">清单</view>
-  <checkbox-group bindchange="checkboxChange"  wx:for="{{list}}" wx:key="openid" checked="{{item.checked}}" 
-    data-_id="{{item._id}}" data-checked="{{item.checked}}" data-openid="{{item.openid}}" data-listdata="{{item.listdata}}"
-  > 
-  <view>
-    <checkbox  value="{{item.listdata}}"/>
-    {{item.listdata}}
-  </view>
-</checkbox-group>
-<view class="title">记事本</view>
-  <view wx:for="{{notepad}}" wx:key="openid">
-    <view>{{item.title}}:{{item.content}}</view>
+<view style="background:#ffffff">
+
+  <view class="notepad"  wx:for="{{list}}" wx:key="openid" >
+    <view  class="notepadtitle" value="{{item.listdata}}">{{item.listdata}}</view>
+    <view class="buttons">
+      <view class="location" >
+        清单  创建于   {{item.date}}
+      </view>
+      <button></button>
+    </view>
+  </view>  
+  
+
+  <view class="notepad" wx:for="{{notepad}}" wx:key="openid">
+    <view class="notepadtitle ">{{item.title}}</view>
+    <view class="notepadcontent">{{item.content}}</view>
+    <view class="buttons">
+      <view class="location" >
+        便签  创建于   {{item.date}}
+      </view>
+      <button></button>
+    </view>
   </view> 
 </view>    

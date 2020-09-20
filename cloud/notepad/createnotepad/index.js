@@ -13,7 +13,8 @@ exports.main = async (event, context) => {
       data:{
         title:event.title,
         content:event.content,
-        openid:event.openid
+        openid:event.openid,
+        date:event.date,
       }
     })
  }catch(e){

@@ -13,7 +13,7 @@ exports.main = async (event, context) => {
       data:{
        openid:event.openid,
        listdata:event.listdata,
-       checked:event.checked
+       date:event.date,
       }
     })
  }catch(e){

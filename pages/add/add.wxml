@@ -1,9 +1,9 @@
 <van-grid clickable column-num="1" >
-  <van-grid-item icon="home-o"  text="记事本" 
+  <van-grid-item icon="orders-o"  text="记事本" 
   link-type="navigateTo"
     url="/pages/add/notepad/notepad"/>
 
-  <van-grid-item icon="photo-o" text="清单"
+  <van-grid-item icon="comment-o" text="清单"
   link-type="navigateTo"
   url="/pages/add/list/list"/>
   <!-- 

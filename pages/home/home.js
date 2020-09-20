@@ -1,3 +1,5 @@
+const util = require('../../utils/util')
+
 // pages/home/home.js
 Page({
 
@@ -11,11 +13,7 @@ Page({
   
   }, 
  
-  // 选择清单时
-  checkboxChange: function (e) {
-    console.log("选择菜单e:",e)
-    console.log("list",this.data.list)
-  },
+  
   
   onShow:function(e){
     // 获取缓存信息
@@ -32,14 +30,18 @@ Page({
         // 下传
         success:res=>{
           that.setData({
-            list:res.result.data
+            list:res.result.data.map(list=>{
+              var date = util.formatTime(new Date(list.date))
+              list.date = date
+              return list
+            })
           })
           },
         fail:res=>{
           console.log("res获取失败",res)
           }
     })
-   
+  
     wx.cloud.callFunction({
       name:'getnotepad',
         // 上传
@@ -49,14 +51,16 @@ Page({
         // 下传
         success:res=>{
           that.setData({
-            notepad:res.result.data
+            notepad:res.result.data.map(notepad=>{
+              var date = util.formatTime(new Date(notepad.date))
+              notepad.date = date
+              return notepad
+            })
           })
           },
         fail:res=>{
           console.log("res获取失败",res)
           }
     })
-
-   
   }
-})
+}) 

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "calendar": "/pages/menu/day1/calendar/index"
+  }
+}

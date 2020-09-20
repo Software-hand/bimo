@@ -72,7 +72,8 @@ Page({
             data:{
               title:this.data.title,
               content:this.data.content,
-              openid:this.data.openid
+              openid:this.data.openid,
+              date:Date.now()
             },
           })
           // wx.switchTab({
