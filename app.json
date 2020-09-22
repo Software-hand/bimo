@@ -4,6 +4,8 @@
   },
   "pages": [
     "pages/home/home",
+    "pages/home/updatenotepad/updatenotepad",
+    "pages/home/updatelist/updatelist",
     "pages/menu/menu",
     "pages/add/add",
     "pages/file/file",

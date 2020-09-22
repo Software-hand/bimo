@@ -1,0 +1,12 @@
+<view class="page-body">
+  <view class="page-section">
+    <!-- 失去焦点触发 bindblur="addlist" -->
+    <view class="textarea-wrp">
+      <input bindblur="addlist" auto-height="true"  placeholder="待办事项"
+      bindinput="add1"  value="{{list.listdata}}" data-listdata="{{list.listdata}}"
+      />
+    </view>
+  </view>
+ 
+   
+</view>

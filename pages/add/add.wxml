@@ -1,5 +1,5 @@
 <van-grid clickable column-num="1" >
-  <van-grid-item icon="orders-o"  text="记事本" 
+  <van-grid-item icon="orders-o"  text="便签" 
   link-type="navigateTo"
     url="/pages/add/notepad/notepad"/>
 
