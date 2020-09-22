@@ -3,22 +3,28 @@ const util = require('../../utils/util')
 // pages/home/home.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
+    // 清单
     list:[],
+    // 记事本
     notepad:[],
-    checked:[]
-  
+    // 底层弹窗
+    show: false,
+    actions: [
+      {
+        name: '修改',
+      },
+      {
+        name: '删除',
+      }
+    ],
+    _id:"",
   }, 
- 
-  onPullDownRefresh(){
-    　　console.log('--------下拉刷新-------')
-    　　wx.showNavigationBarLoading() //在标题栏中显示加载
-        setTimeout(wx.stopPullDownRefresh(),2000)
-    　　this.getshow()
-        
+  
+  // 下拉刷新
+  onPullDownRefresh:function(e){
+    setTimeout(wx.stopPullDownRefresh(),2000)
+　　this.getshow()   
   },
 
   onShow:function(e){
@@ -73,7 +79,45 @@ Page({
             console.log("res获取失败",res)
             }
       })
-    
+  },
+  sheet:function(e){
+    console.log("按钮打开e:",e)
+    this.setData({
+      show:true,
+      _id:e.currentTarget.dataset._id
+    })
+    console.log("_id:",e.currentTarget.dataset._id)
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
+  cancel()  {
+    this.setData({ show: false });
+  },
+  del:function(e){   
+    console.log("删除e:",e)
+    // 删除云数据库记录
+    wx.cloud.callFunction({
+      name:'delnotepad',
+      // 上传
+      data:{
+        _id:this.data._id
+      },
+      success:res=>{
+        console.log("delnotepad:云函数调用成功",res)
+        console.log("notepad的_id:",this.data._id)
+      },
+      fail:()=>{
+        console.log("login:云函数调用失败")
+      }
+    })
+    this.setData({ show: false });
+    this.onShow();
+  },
+
+  update:function(e){
+    console.log("修改e:",e)
+    this.setData({ show: false });
   }
 
 }) 

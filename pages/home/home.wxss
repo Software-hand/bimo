@@ -72,5 +72,11 @@ image{
 
 	left: 10rpx;
 	right: 10rpx;
+}
 
+/* 底层弹窗 文字居中 */
+.auto{
+	text-align: center;
+	margin-top:20rpx;
+	height: 60rpx;
 }

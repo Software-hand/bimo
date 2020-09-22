@@ -13,14 +13,33 @@
   </view>  
   
 
-  <view class="notepad" wx:for="{{notepad}}" wx:key="openid">
-    <view class="notepadtitle ">{{item.title}}</view>
-    <view class="notepadcontent">{{item.content}}</view>
+  <view class="notepad" wx:for="{{notepad}}" wx:key="openid" wx:for-item="note">
+    <view class="notepadtitle ">{{note.title}}</view>
+    <view class="notepadcontent">{{note.content}}</view>
     <view class="buttons">
       <view class="location" >
         便签  创建于   {{item.date}}
       </view>
-      <button><image src="../../icon-img/ellipsis.png" mode="scaleToFill" /></button>   
+      <button data-_id="{{note._id}}" bindtap="sheet" ><image src="../../icon-img/ellipsis.png" mode="scaleToFill" /></button>   
     </view>
   </view> 
 </view>    
+
+
+<!-- 底层弹窗  actions="{{ actions }}" -->
+<van-action-sheet
+  show="{{ show }}"
+  bind:close="onClose"
+  bind:getuserinfo="onGetUserInfo"
+  cancel-text="取消"
+  bind:cancel="cancel"
+> 
+<view  data-name="{{notepad}}"  >
+    <view class="auto"  bindtap="update" >
+      修改
+    </view>
+    <view class="auto" bindtap="del" >
+      删除
+    </view>
+</view>
+</van-action-sheet>
