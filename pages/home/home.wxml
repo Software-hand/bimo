@@ -8,7 +8,7 @@
       <view class="location" >
         清单  创建于   {{item.date}}
       </view>
-      <button></button>
+      <button><image src="../../icon-img/ellipsis.png" mode="scaleToFill" /></button>
     </view>
   </view>  
   
@@ -20,7 +20,7 @@
       <view class="location" >
         便签  创建于   {{item.date}}
       </view>
-      <button></button>
+      <button><image src="../../icon-img/ellipsis.png" mode="scaleToFill" /></button>   
     </view>
   </view> 
 </view>    

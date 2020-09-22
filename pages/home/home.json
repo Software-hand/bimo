@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
   },
-  "navigationBarTitleText": "我的主页"
+  "navigationBarTitleText": "我的主页",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }
