@@ -1,5 +1,5 @@
 <view wx:if="{{!openid}}">
-<button class="into" open-type="getUserInfo" lang="zh_CN"
+<button class="buttons" open-type="getUserInfo" lang="zh_CN"
 bindgetuserinfo="onGoUserInfo">登录</button>
 </view>
 <!-- "{{condition}}"> True -->
@@ -13,6 +13,10 @@ bindgetuserinfo="onGoUserInfo">登录</button>
 
 <van-cell title="说明" is-link url="/pages/my/explain/explain" link-type="navigateTo"/>
 <van-cell title="关于" is-link url="/pages/my/about/about" link-type="navigateTo"/>
+<button open-type="contact" session-from="weapp">客服</button>
+
+
+
 
 <!-- 未实现 -->
 <!-- <van-cell title="日志" is-link url='/pages/my/logs/logs' link-type="navigateTo"/> -->

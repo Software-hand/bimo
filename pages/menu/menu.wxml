@@ -3,15 +3,15 @@
   <van-grid-item icon="home-o"  text="日历" 
   link-type="navigateTo"
     url="/pages/menu/day/day"/>
-    <van-grid-item icon="home-o"  text="日历1" 
+    <!-- <van-grid-item icon="home-o"  text="日历1" 
   link-type="navigateTo"
-    url="/pages/menu/day1/day1"/>
+    url="/pages/menu/day1/day1"/> -->
     <van-grid-item icon="home-o"  text="计算器" 
   link-type="navigateTo"
     url="/pages/menu/counter/counter"/>
-    <van-grid-item icon="home-o"  text="番茄工作" 
+    <!-- <van-grid-item icon="home-o"  text="番茄工作" 
   link-type="navigateTo"
-    url="/pages/menu/time/time"/>
+    url="/pages/menu/time/time"/> -->
 
 </van-grid>
 

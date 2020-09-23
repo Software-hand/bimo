@@ -6,13 +6,18 @@
   <van-grid-item icon="comment-o" text="清单"
   link-type="navigateTo"
   url="/pages/add/list/list"/>
+
+  <van-grid-item icon="comment-o" text="链接"
+  link-type="navigateTo"
+  url="/pages/add/link/link"/>
+
   <!-- 
 
   <van-grid-item icon="photo-o" text="绘图" />
 
   <van-grid-item icon="photo-o" text="地址" />
   <van-grid-item icon="photo-o" text="日子" />
-  <van-grid-item icon="photo-o" text="链接" />
+
   <van-grid-item icon="photo-o" text="银行卡" />
   <van-grid-item icon="photo-o" text="名片" />
   <van-grid-item icon="photo-o" text="通知" />
