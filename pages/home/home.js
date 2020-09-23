@@ -11,21 +11,13 @@ Page({
     // 底层弹窗
     show2: false,
     show1: false,
-    actions: [
-      {
-        name: '修改',
-      },
-      {
-        name: '删除',
-      }
-    ],
     _id:"",
   }, 
   
   // 下拉刷新
   onPullDownRefresh:function(e){
     setTimeout(wx.stopPullDownRefresh(),2000)
-　　this.onShow()   
+    this.getshow()
   },
 
   onShow:function(e){
@@ -119,8 +111,6 @@ Page({
       },
       success:res=>{
         console.log("delnotepad:云函数调用成功",res)
-        console.log("notepad的_id:",that.data._id)
-
       },
       fail:()=>{
         console.log("login:云函数调用失败")
@@ -160,7 +150,7 @@ Page({
     })
   },
 
-  // 记事本修改
+  // 便签修改
   updatenotepad:function(e){
 
     this.setData({ show2: false });

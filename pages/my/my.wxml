@@ -2,7 +2,7 @@
 <button class="into" open-type="getUserInfo" lang="zh_CN"
 bindgetuserinfo="onGoUserInfo">登录</button>
 </view>
-
+<!-- "{{condition}}"> True -->
 <view  class="uploader-container" wx:if="{{openid}}"> 
   <image class="image" src="{{userinfo.avatarUrl}}"></image>
   <view class="name">{{userinfo.nickName}}</view>

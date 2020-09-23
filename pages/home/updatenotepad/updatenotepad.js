@@ -10,21 +10,21 @@ Page({
   
   },
 
-  addtitle: function(e) {
-    console.log("失去焦点",e)
-    this.setData({
-      content: e.currentTarget.dataset.content,
-      title: e.currentTarget.dataset.title
-    })
-  },
+  // addtitle: function(e) {
+  //   console.log("失去焦点",e)
+  //   this.setData({
+  //     content: e.currentTarget.dataset.content,
+  //     title: e.currentTarget.dataset.title
+  //   })
+  // },
 
-  addcontent: function(e){
-    console.log("失去焦点",e),
-    this.setData({
-      content: e.currentTarget.dataset.content,
-      title: e.currentTarget.dataset.title
-    })
-  },
+  // addcontent: function(e){
+  //   console.log("失去焦点",e),
+  //   this.setData({
+  //     content: e.currentTarget.dataset.content,
+  //     title: e.currentTarget.dataset.title
+  //   })
+  // },
   
   // 保存标题
   add1: function(e){
@@ -50,7 +50,7 @@ Page({
   },
   // onUnlad 返回触发
   onUnload:function(e){
-    if(this.data.content !== "" ){
+    if(this.data.title !== "" && this.data.content !== ""){
     console.log('onUnload执行',e)
     const forid = wx.getStorageSync("forid")
     wx.showToast({
@@ -63,7 +63,7 @@ Page({
       name:'updatenotepad',
       data:{
         _id:forid,
-
+        title:this.data.title,
         content:this.data.content,
         date:Date.now()
       }
@@ -85,7 +85,7 @@ Page({
         date:Date.now()
       }
     })
-    }else if(this.data.title !== "" && this.data.content !== ""){
+    }else if(this.data.content !== ""){
       console.log('onUnload执行',e)
     const forid = wx.getStorageSync("forid")
     wx.showToast({
@@ -98,7 +98,6 @@ Page({
       name:'updatenotepad',
       data:{
         _id:forid,
-        title:this.data.title,
         content:this.data.content,
         date:Date.now()
       }
@@ -114,7 +113,6 @@ Page({
 
   getlogs: function (e) {
     // 获取缓存信息
-    
     const forid = wx.getStorageSync("forid")
     const that = this 
     wx.cloud.callFunction({

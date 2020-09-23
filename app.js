@@ -14,7 +14,7 @@ App({
         key: 'workTime',
         data: defaultTime.defaultWorkTime
       })
-    }
+    }  
     if (!restTime) {
       wx.setStorage({
         key: 'restTime',

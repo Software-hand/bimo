@@ -1,17 +1,17 @@
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
     // 用户信息
-    userinfo:{},
+    userinfo:"",
     // 用户ID
     openid:""
   },
   // onGoUserInfo
   onGoUserInfo:function (e) {
-    
+ 
     this.setData({
       // 返回事件中用户信息
       userinfo: e.detail.userInfo
