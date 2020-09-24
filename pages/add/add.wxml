@@ -7,9 +7,9 @@
   link-type="navigateTo"
   url="/pages/add/list/list"/>
 
-  <van-grid-item icon="comment-o" text="链接"
+  <!-- <van-grid-item icon="comment-o" text="链接"
   link-type="navigateTo"
-  url="/pages/add/link/link"/>
+  url="/pages/add/link/link"/> -->
 
   <!-- 
 

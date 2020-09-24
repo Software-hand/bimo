@@ -1,0 +1,9 @@
+.map_container{ 
+  height: 1400rpx; 
+  width: 100%; 
+} 
+
+.map { 
+  height: 100%; 
+  width: 100%; 
+} 

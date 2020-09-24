@@ -1,17 +1,20 @@
 <van-grid clickable column-num="1" >
 
-  <van-grid-item icon="home-o"  text="日历" 
+  <van-grid-item icon="todo-list-o"  text="日历" 
   link-type="navigateTo"
     url="/pages/menu/day/day"/>
-    <!-- <van-grid-item icon="home-o"  text="日历1" 
+
+  <van-grid-item icon="bill-o"  text="计算器" 
   link-type="navigateTo"
-    url="/pages/menu/day1/day1"/> -->
-    <van-grid-item icon="home-o"  text="计算器" 
+  url="/pages/menu/counter/counter"/>
+
+  <van-grid-item icon="location-o"  text="地图" 
   link-type="navigateTo"
-    url="/pages/menu/counter/counter"/>
-    <!-- <van-grid-item icon="home-o"  text="番茄工作" 
+  url="/pages/menu/map/map"/>
+
+  <van-grid-item icon="logistics"  text="天气" 
   link-type="navigateTo"
-    url="/pages/menu/time/time"/> -->
+  url="/pages/menu/weather/weather"/>
+
 
 </van-grid>
-
