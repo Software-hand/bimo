@@ -1,48 +1,82 @@
-/* pages/file/file.wxss */
-page{
-  background: rgb(255, 255, 255);
+
+/* 记事本 */
+.notepadtitle{
+	text-align: left;
+	/* width: 700rpx; */
+	font-size:40rpx;
+	/* 字体加粗 */
+	font-weight:bold;
+	padding: 10rpx 30rpx;
+	border-left: 2rpx solid  rgb(217, 217, 223);
+	border-right: 2rpx solid  rgb(217, 217, 223);
+	border-top: 2rpx solid  rgb(217, 217, 223);
+	margin-right:0rpx;
 }
 
-.touch-item {
- font-size: 14px;
- display: flex;
- /* //均匀排布每个元素 */
- background: #fff;
- justify-content: space-between;
- /*边框底部 border-bottom:1px solid rgb(243, 177, 177); */
- width: 100%;
- overflow: hidden;
- margin-top:16rpx;
+
+
+.notepadcontent{
+	text-align: left;
+	font-size:30rpx;
+	/* width: 700rpx; */
+	padding: 10rpx 30rpx;
+	color:rgb(48, 45, 45);
+	border-left: 2rpx solid  rgb(217, 217, 223);
+	border-right: 2rpx solid  rgb(217, 217, 223);
+	margin-right:0rpx;
 }
-.content {
- width: 100%;
- padding: 10px;
- line-height: 22px;
- margin-right:0;
- -webkit-transition: all 0.4s;
- transition: all 0.4s;
- -webkit-transform: translateX(90px);
- transform: translateX(90px);
- margin-left: -90px;
+
+
+.notepad{
+	/* border: 2rpx solid rgb(0, 0, 0); */
+	margin-top:50rpx;
+	margin-left:20rpx;
+	margin-right:20rpx;
+	
 }
-.del {
- background-color: #c00;
- width: 90px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- color: #fff;
- -webkit-transform: translateX(90px);
- transform: translateX(90px);
- -webkit-transition: all 0.4s;
- transition: all 0.4s;
+ 
+/* 清单 */
+
+
+
+/* 按钮 */
+button{
+	width: 50rpx;
+	height: 50rpx;
+	margin-right:0rpx;
 }
-/* .touch-move-active .content, */
-.touch-move-active .del {
- -webkit-transform: translateX(0);
- transform: translateX(0);
+/* 名称 日期 上面那条线 */
+.buttons{
+	border-top: 1rpx solid  rgb(217, 217, 223);
+	padding: 5rpx 5rpx;
+	margin-right:0rpx;
+	border-left: 2rpx solid  rgb(217, 217, 223);
+	border-right: 2rpx solid  rgb(217, 217, 223);
+	border-bottom: 2rpx solid  rgb(217, 217, 223);
 }
-.touch-move-active .content{
-  background: rgb(255, 255, 255);
+
+/* 名称 日期 */
+.location{
+	
+	position:absolute;
+	font-size:20rpx;
+	margin-top:5rpx;
+	padding: 10rpx 30rpx;
+	color:rgb(48, 45, 45);
+}
+
+image{
+	position:absolute;
+	width:  50rpx ; 
+	height: 50rpx;
+
+	left: 10rpx;
+	right: 10rpx;
+}
+
+/* 底层弹窗 文字居中 */
+.auto{
+	text-align: center;
+	margin-top:20rpx;
+	height: 60rpx;
 }
