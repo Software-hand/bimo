@@ -12,6 +12,10 @@
   link-type="navigateTo"
   url="/pages/menu/map/map"/>
 
+  <van-grid-item icon="location-o"  text="腾讯地图" 
+  link-type="navigateTo"
+  url="/pages/menu/tmap/tmap"/>
+
   <van-grid-item icon="logistics"  text="天气" 
   link-type="navigateTo"
   url="/pages/menu/weather/weather"/>
