@@ -1,0 +1,23 @@
+textarea {
+  width: 700rpx;
+}
+input{
+  width: 700rpx;
+  /* padding: 0 25rpx; */
+}
+.textarea-wrp {
+  /* 先上 后右 */
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+

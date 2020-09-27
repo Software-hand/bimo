@@ -1,0 +1,35 @@
+
+
+<view style="background:#ffffff">
+
+<view class="map" wx:for="{{map}}" wx:key="openid" wx:for-item="note">
+  <view class="maptitle ">{{note.address}}</view>
+  <view class="mapcontent">{{note.desc}}</view>
+  <view class="buttons">
+    <view class="location" >
+      位置  创建于   {{note.date}}
+    </view>
+    <button data-_id="{{note._id}}" bindtap="sheet3" ><image src="../../../icon-img/ellipsis.png" mode="scaleToFill" /></button>   
+  </view>
+</view> 
+</view>    
+
+
+
+<!-- 位置弹窗 -->
+<van-action-sheet
+show="{{ show3 }}"
+bind:close="onClose"
+bind:getuserinfo="onGetUserInfo"
+cancel-text="取消"
+bind:cancel="cancel"
+> 
+<view >
+  <view class="auto"  bindtap="updatemap" >
+    修改
+  </view>
+  <view class="auto" bindtap="delmap" >
+    删除
+  </view>
+</view>
+</van-action-sheet>

@@ -1,0 +1,23 @@
+<view class="page-body" >
+  <view class="page-section">
+  
+    <view class="textarea-wrp">
+      <input bindblur="addaddress" auto-height="true"  placeholder="地址"
+      bindinput="add1" value="{{map.address}}"  data-title="{{map.address}}"
+      />
+    </view>
+  </view>
+
+  <view class="page-section">
+    <!-- 自动聚焦就是点进来，手机键盘直接打开 -->
+    <!-- 通过 auto-focus 设置是否聚焦 -->
+    <view class="textarea-wrp " >
+      <textarea  placeholder="描述" value="{{map.desc}}"  data-content="{{map.desc}}"
+      maxlength="-1"
+      auto-height="true"
+      bindblur='adddesc'
+      bindinput="add2"
+      />
+    </view>
+  </view>
+</view>

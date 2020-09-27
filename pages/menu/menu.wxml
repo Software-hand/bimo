@@ -8,9 +8,6 @@
   link-type="navigateTo"
   url="/pages/menu/counter/counter"/>
 
-  <van-grid-item icon="location-o"  text="地图" 
-  link-type="navigateTo"
-  url="/pages/menu/map/map"/>
 
   <van-grid-item icon="location-o"  text="腾讯地图" 
   link-type="navigateTo"

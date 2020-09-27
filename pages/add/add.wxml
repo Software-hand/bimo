@@ -7,6 +7,11 @@
   link-type="navigateTo"
   url="/pages/add/list/list"/>
 
+  
+  <van-grid-item icon="location-o"  text="位置" 
+  link-type="navigateTo"
+  url="/pages/add/map/map"/>
+
   <!-- <van-grid-item icon="comment-o" text="链接"
   link-type="navigateTo"
   url="/pages/add/link/link"/> -->

@@ -69,7 +69,7 @@ Page({
         
           wx.cloud.callFunction({
             name:'createnotepad',
-            data:{
+            data:{ 
               title:this.data.title,
               content:this.data.content,
               openid:this.data.openid,

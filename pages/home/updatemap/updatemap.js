@@ -1,31 +1,30 @@
 Page({
   data: {
     // 标题
-    title:'',
+    address:'',
     // 内容
-    content:'',
+    desc:'',
     // 用户openid
     openid:'',
-    notepad:[]
+    map:[]
   
   },
-
 
   
   // 保存标题
   add1: function(e){
     this.setData({
-      title:e.detail.value
+      address:e.detail.value
     })
-    console.log("标题:",this.data.title)
+    console.log("标题:",this.data.address)
   },
    
   // 保存内容
   add2: function(e){
     this.setData({
-      content:e.detail.value
+      desc:e.detail.value
     })
-    console.log("内容:",this.data.content)
+    console.log("内容:",this.data.desc)
   },
 
   // onLoad 首次加载页面执行
@@ -36,55 +35,55 @@ Page({
   },
   // onUnlad 返回触发
   onUnload:function(e){
-    if(this.data.title !== "" && this.data.content !== ""){
+    if(this.data.address !== "" && this.data.desc !== ""){
     console.log('onUnload执行',e)
     const forid = wx.getStorageSync("forid")
     wx.showToast({
-      title: '笔记保存成功',
+      address: '笔记保存成功',
       icon: 'success',
       duration: 2000
     }),
  
     wx.cloud.callFunction({
-      name:'updatenotepad',
+      name:'updatemap',
       data:{
         _id:forid,
-        title:this.data.title,
-        content:this.data.content,
+        address:this.data.address,
+        desc:this.data.desc,
         date:Date.now()
       }
     })
-    }else if(this.data.title !== "" ){
+    }else if(this.data.address !== "" ){
       console.log('onUnload执行',e)
     const forid = wx.getStorageSync("forid")
     wx.showToast({
-      title: '笔记保存成功',
+      address: '笔记保存成功',
       icon: 'success',
       duration: 2000
     }),
 
     wx.cloud.callFunction({
-      name:'updatenotepad',
+      name:'updatemap',
       data:{
         _id:forid,
-        title:this.data.title,
+        address:this.data.address,
         date:Date.now()
       }
     })
-    }else if(this.data.content !== ""){
+    }else if(this.data.desc !== ""){
       console.log('onUnload执行',e)
     const forid = wx.getStorageSync("forid")
     wx.showToast({
-      title: '笔记保存成功',
+      address: '笔记保存成功',
       icon: 'success',
       duration: 2000
     }),
 
     wx.cloud.callFunction({
-      name:'updatenotepad',
+      name:'updatemap',
       data:{
         _id:forid,
-        content:this.data.content,
+        desc:this.data.desc,
         date:Date.now()
       }
     })}
@@ -102,7 +101,7 @@ Page({
     const forid = wx.getStorageSync("forid")
     const that = this 
     wx.cloud.callFunction({
-      name:'querynotepad',
+      name:'querymap',
       // 上传
       data: {
         _id:forid
@@ -110,7 +109,7 @@ Page({
       // 下传
       success:res=>{
         that.setData({
-          notepad:res.result.data
+          map:res.result.data
         })
         },
       fail:res=>{

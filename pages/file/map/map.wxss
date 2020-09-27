@@ -1,6 +1,6 @@
 
-/* 记事本 */
-.notepadtitle{
+/* 位置 */
+.maptitle{
 	text-align: left;
 	/* width: 700rpx; */
 	font-size:40rpx;
@@ -15,7 +15,7 @@
 
 
 
-.notepadcontent{
+.mapcontent{
 	text-align: left;
 	font-size:30rpx;
 	/* width: 700rpx; */
@@ -27,7 +27,7 @@
 }
 
 
-.notepad{
+.map{
 	/* border: 2rpx solid rgb(0, 0, 0); */
 	margin-top:50rpx;
 	margin-left:20rpx;
@@ -79,42 +79,4 @@ image{
 	text-align: center;
 	margin-top:20rpx;
 	height: 60rpx;
-}
-
-/* 位置 */
-
-/* 位置 */
-.maptitle{
-	text-align: left;
-	/* width: 700rpx; */
-	font-size:40rpx;
-	/* 字体加粗 */
-	font-weight:bold;
-	padding: 10rpx 30rpx;
-	border-left: 2rpx solid  rgb(217, 217, 223);
-	border-right: 2rpx solid  rgb(217, 217, 223);
-	border-top: 2rpx solid  rgb(217, 217, 223);
-	margin-right:0rpx;
-}
-
-
-
-.mapcontent{
-	text-align: left;
-	font-size:30rpx;
-	/* width: 700rpx; */
-	padding: 10rpx 30rpx;
-	color:rgb(48, 45, 45);
-	border-left: 2rpx solid  rgb(217, 217, 223);
-	border-right: 2rpx solid  rgb(217, 217, 223);
-	margin-right:0rpx;
-}
-
-
-.map{
-	/* border: 2rpx solid rgb(0, 0, 0); */
-	margin-top:50rpx;
-	margin-left:20rpx;
-	margin-right:20rpx;
-	
 }
