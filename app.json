@@ -3,12 +3,13 @@
     "van-icon": "@vant/weapp/icon/index"
   },
   "pages": [
+
     "pages/my/my",
     "pages/home/home",
     "pages/menu/menu",
     "pages/add/add",
-    "pages/file/file",
-    "pages/menu/tmap/tmap"
+    "pages/file/file"
+    
   ],  
   "window": {
     "backgroundTextStyle": "light",
