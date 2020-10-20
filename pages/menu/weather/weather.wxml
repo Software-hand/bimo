@@ -1,5 +1,5 @@
-<view> 
-  <text>{{weatherData}}</text> 
+<view class="weather">
+  <text>{{weatherData}}</text>
 </view>
 <!-- <view style="padding-top:30px"></view>
 <block wx:for="{{futureWeather}}">
