@@ -1,5 +1,5 @@
 // 引用百度地图微信小程序JSAPI模块 
-var bmap = require('../../../libs/bmap-wx.js'); 
+var bmap = require('./libs/bmap-wx.js'); 
 var wxMarkerData = []; 
 Page({ 
     data: { 

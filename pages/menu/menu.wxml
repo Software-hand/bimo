@@ -13,9 +13,16 @@
   link-type="navigateTo"
   url="/pages/menu/tmap/tmap"/>
 
+<!-- 百度Api有点问题 -->
+  <!-- <van-grid-item icon="logistics"  text="天气" 
+  link-type="navigateTo"
+  url="/pages/menu/weather/weather"/> -->
+ 
+ <!-- 使用 阿里云APi -->
+ <!-- API 管理地址 https://market.console.aliyun.com/imageconsole/index.htm?spm=5176.6660585.774526198.1.5af36bf81QxpqE#/bizlist?_k=pot3jm -->
   <van-grid-item icon="logistics"  text="天气" 
   link-type="navigateTo"
-  url="/pages/menu/weather/weather"/>
+  url="/pages/menu/weather1/weather1"/>
 
 
 </van-grid>
